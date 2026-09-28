@@ -1,0 +1,61 @@
+name: Buscar DOU
+
+on:
+  schedule:
+    # 11:00 UTC = 08:00 no horário de Brasília (UTC-3, sem horário de verão).
+    # O GitHub pode atrasar execuções agendadas em alguns minutos.
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+    inputs:
+      data:
+        description: "Data específica (dd-mm-aaaa). Deixe vazio para usar hoje."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: buscar-dou
+  cancel-in-progress: false
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Buscar no DOU
+        id: buscar
+        continue-on-error: true
+        env:
+          DATA_MANUAL: ${{ github.event.inputs.data }}
+        run: |
+          if [ -n "$DATA_MANUAL" ]; then
+            python scripts/buscar_dou.py --data "$DATA_MANUAL"
+          else
+            python scripts/buscar_dou.py
+          fi
+
+      - name: Salvar resultados no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados.json
+          git diff --cached --quiet || git commit -m "Atualiza dados do DOU"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
+
+      - name: Avisar se a busca falhou
+        if: steps.buscar.outcome == 'failure'
+        run: |
+          echo "A busca terminou com erro (total ou parcial). Detalhes na tabela Execuções do painel e no log do passo 'Buscar no DOU'."
+          exit 1
