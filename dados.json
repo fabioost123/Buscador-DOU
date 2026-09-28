@@ -1,7 +1,34 @@
 {
-  "gerado_em": null,
-  "keywords": [],
-  "secoes": [],
-  "pubs": [],
-  "runs": []
+ "gerado_em": "2026-09-28T08:47:02-03:00",
+ "keywords": [
+  "Capitão Leônidas Marques",
+  "atenção primária",
+  "Previne Brasil",
+  "e-SUS",
+  "SISAB",
+  "eMulti",
+  "agente comunitário de saúde",
+  "piso da atenção primária"
+ ],
+ "secoes": [
+  "DO1"
+ ],
+ "pubs": [],
+ "runs": [
+  {
+   "id": "r20260928084702",
+   "started_at": "2026-09-28T08:47:02-03:00",
+   "status": "concluida",
+   "secoes": [
+    "DO1"
+   ],
+   "datas": [
+    "2026-09-28"
+   ],
+   "varridas": 578,
+   "total_encontradas": 0,
+   "novas": 0,
+   "erro": null
+  }
+ ]
 }
