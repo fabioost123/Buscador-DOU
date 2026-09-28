@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buscador · Monitor do Diário Oficial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F6F4EE;
+    --surface:#FFFFFF;
+    --ink:#211F1B;
+    --ink-soft:rgba(33,31,27,.62);
+    --ink-faint:rgba(33,31,27,.4);
+    --primary:#123C39;
+    --primary-soft:rgba(18,60,57,.08);
+    --primary-softer:rgba(18,60,57,.045);
+    --accent:#C98A2C;
+    --accent-soft:rgba(201,138,44,.14);
+    --line:#DED7C9;
+    --danger:#A23B2E;
+    --danger-soft:rgba(162,59,46,.1);
+    --ok:#2F6B3A;
+    --ok-soft:rgba(47,107,58,.1);
+    --serif:'Source Serif 4', Georgia, serif;
+    --sans:'Inter', system-ui, -apple-system, sans-serif;
+    --radius:10px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;min-height:100vh;}
+  a{color:inherit;}
+  .app{display:flex;min-height:100vh;}
+
+  .rail{width:230px;flex-shrink:0;background:var(--primary);color:#EFEAE0;padding:24px 18px;display:flex;flex-direction:column;gap:28px;}
+  .rail-brand .mark{font-family:var(--serif);font-size:22px;font-weight:600;letter-spacing:.2px;}
+  .rail-brand .sub{font-size:11.5px;color:rgba(239,234,224,.6);line-height:1.4;margin-top:2px;}
+  .rail-nav{display:flex;flex-direction:column;gap:2px;}
+  .rail-nav button{all:unset;cursor:pointer;font-size:13.5px;font-family:var(--sans);color:rgba(239,234,224,.72);padding:9px 10px;border-radius:7px;display:flex;align-items:center;gap:9px;}
+  .rail-nav button svg{width:15px;height:15px;flex-shrink:0;opacity:.85;}
+  .rail-nav button.active{background:rgba(239,234,224,.1);color:#fff;}
+  .rail-nav button:hover{background:rgba(239,234,224,.06);}
+  .rail-foot{margin-top:auto;font-size:11px;color:rgba(239,234,224,.42);line-height:1.5;}
+
+  main{flex:1;min-width:0;padding:34px 40px 60px;}
+  .topbar{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:26px;}
+  .topbar h1{font-family:var(--serif);font-weight:600;font-size:29px;margin:0 0 6px;letter-spacing:-.2px;}
+  .topbar p{margin:0;color:var(--ink-soft);font-size:14px;max-width:520px;line-height:1.5;}
+  .btn{font-family:var(--sans);font-weight:600;font-size:13.5px;border-radius:7px;padding:10px 16px;border:1px solid transparent;cursor:pointer;display:inline-flex;align-items:center;gap:7px;transition:background .15s ease, opacity .15s ease;}
+  .btn-primary{background:var(--primary);color:#fff;}
+  .btn-primary:hover{background:#0E302D;}
+  .btn-primary:disabled{opacity:.5;cursor:not-allowed;}
+  .btn-small{padding:6px 11px;font-size:12.5px;}
+  .btn svg{width:14px;height:14px;}
+  .btn.spin svg{animation:spin .8s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+
+  .stats{display:flex;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);margin-bottom:30px;overflow:hidden;}
+  .stat{flex:1;padding:16px 20px;border-right:1px solid var(--line);}
+  .stat:last-child{border-right:none;}
+  .stat .num{font-family:var(--serif);font-size:26px;font-weight:600;color:var(--primary);line-height:1;}
+  .stat .lbl{margin-top:6px;font-size:12px;color:var(--ink-soft);}
+
+  section.block{margin-bottom:34px;}
+  .block-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;gap:12px;flex-wrap:wrap;}
+  .block-head h2{font-family:var(--serif);font-size:18px;font-weight:600;margin:0;}
+  .block-head .count{font-size:12.5px;color:var(--ink-faint);}
+
+  .kw-row{display:flex;gap:8px;margin-bottom:12px;}
+  .kw-row input{flex:1;max-width:340px;font-family:var(--sans);font-size:13.5px;padding:9px 12px;border:1px solid var(--line);border-radius:7px;background:var(--surface);}
+  .kw-row input:focus{outline:2px solid var(--primary-soft);border-color:var(--primary);}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{display:flex;align-items:center;gap:7px;background:var(--primary-soft);color:var(--primary);font-size:12.5px;font-weight:500;padding:6px 8px 6px 12px;border-radius:99px;}
+  .chip button{all:unset;cursor:pointer;width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--primary);}
+  .chip button:hover{background:rgba(18,60,57,.15);}
+  .chip button svg{width:9px;height:9px;}
+  .empty-hint{font-size:12.5px;color:var(--ink-faint);font-style:italic;}
+
+  .feed-list{border-top:1px solid var(--line);}
+  .pub{padding:16px 0;border-bottom:1px solid var(--line);display:flex;gap:16px;align-items:flex-start;}
+  .pub.done{opacity:.5;}
+  .pub-main{flex:1;min-width:0;}
+  .pub-meta{display:flex;align-items:center;gap:8px;font-size:11.5px;color:var(--ink-faint);margin-bottom:5px;flex-wrap:wrap;}
+  .badge{background:var(--accent-soft);color:#8A5F1B;padding:2px 8px;border-radius:99px;font-weight:600;font-size:11px;}
+  .badge-cat{background:var(--primary-softer);color:var(--primary);padding:2px 8px;border-radius:99px;font-weight:600;font-size:11px;}
+  .pub h3{font-family:var(--serif);font-size:15.5px;font-weight:600;margin:0 0 5px;line-height:1.35;}
+  .pub p{margin:0;font-size:13.2px;color:var(--ink-soft);line-height:1.55;max-width:640px;}
+  .pub .ia-tag{font-size:10.5px;color:var(--ink-faint);font-weight:600;text-transform:uppercase;letter-spacing:.3px;margin-right:6px;}
+  .pub-tags{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;align-items:center;}
+  .tag-hit{font-size:10.8px;border:1px solid var(--line);color:var(--ink-soft);padding:2px 7px;border-radius:5px;}
+  .pdf-link{font-size:12px;font-weight:600;color:var(--primary);text-decoration:none;display:inline-flex;align-items:center;gap:4px;}
+  .pdf-link svg{width:11px;height:11px;}
+  .pub-actions{display:flex;flex-direction:column;gap:6px;flex-shrink:0;}
+  .icon-btn{all:unset;cursor:pointer;width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;color:var(--ink-faint);border:1px solid var(--line);}
+  .icon-btn:hover{background:var(--primary-softer);color:var(--primary);}
+  .icon-btn.on{background:var(--primary-soft);color:var(--primary);border-color:transparent;}
+  .icon-btn svg{width:14px;height:14px;}
+  .feed-empty{padding:40px 0;text-align:center;color:var(--ink-faint);font-size:13.5px;border-top:1px solid var(--line);}
+
+  .manual-card{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:18px;}
+  .manual-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+  .field{display:flex;flex-direction:column;gap:5px;}
+  .field.full{grid-column:1/-1;}
+  .field label{font-size:11.5px;color:var(--ink-soft);font-weight:600;}
+  .field input, .field textarea{font-family:var(--sans);font-size:13.5px;padding:9px 11px;border:1px solid var(--line);border-radius:7px;background:var(--bg);resize:vertical;}
+  .field textarea{min-height:64px;}
+  .field input:focus, .field textarea:focus{outline:2px solid var(--primary-soft);border-color:var(--primary);}
+
+  .runs-table{width:100%;border-collapse:collapse;font-size:12.8px;}
+  .runs-table th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.3px;color:var(--ink-faint);font-weight:600;padding:8px 10px;border-bottom:1px solid var(--line);}
+  .runs-table td{padding:9px 10px;border-bottom:1px solid var(--line);color:var(--ink-soft);}
+  .status-pill{display:inline-flex;align-items:center;gap:5px;font-weight:600;font-size:11.5px;padding:2px 9px;border-radius:99px;}
+  .status-concluida{background:var(--ok-soft);color:var(--ok);}
+  .status-running{background:var(--accent-soft);color:#8A5F1B;}
+  .status-erro{background:var(--danger-soft);color:var(--danger);}
+
+  @media (max-width: 760px){
+    .app{flex-direction:column;}
+    .rail{width:100%;flex-direction:row;align-items:center;padding:14px 18px;gap:16px;}
+    .rail-nav{flex-direction:row;overflow-x:auto;}
+    .rail-foot{display:none;}
+    main{padding:24px 18px 50px;}
+    .stats{flex-wrap:wrap;}
+    .stat{flex:1 1 50%;border-bottom:1px solid var(--line);}
+    .manual-grid{grid-template-columns:1fr;}
+    .runs-table{display:block;overflow-x:auto;}
+  }
+
+  .banner{display:none;border:1px solid var(--line);border-left:4px solid var(--accent);background:var(--surface);border-radius:var(--radius);padding:14px 16px;margin-bottom:22px;font-size:13.2px;line-height:1.55;color:var(--ink-soft);}
+  .banner.show{display:block;}
+  .banner strong{color:var(--ink);}
+  .banner input[type=file]{margin-top:8px;font-size:12.5px;}
+  .hint{font-size:12.5px;color:var(--ink-faint);margin:0 0 12px;line-height:1.5;max-width:640px;}
+  .chip.clickable{cursor:pointer;padding:6px 12px;border:1px solid transparent;user-select:none;}
+  .chip.clickable:hover{border-color:var(--primary);}
+  .chip.active{background:var(--primary);color:#fff;}
+  .filter-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:14px;}
+  .filter-row input[type=text]{flex:1;min-width:200px;max-width:340px;font-family:var(--sans);font-size:13.5px;padding:9px 12px;border:1px solid var(--line);border-radius:7px;background:var(--surface);}
+  .filter-row input[type=text]:focus{outline:2px solid var(--primary-soft);border-color:var(--primary);}
+  .filter-row label{font-size:12.5px;color:var(--ink-soft);display:flex;align-items:center;gap:6px;cursor:pointer;}
+  .pub h3 a{text-decoration:none;}
+  .pub h3 a:hover{text-decoration:underline;}
+  .badge-manual{background:var(--danger-soft);color:var(--danger);padding:2px 8px;border-radius:99px;font-weight:600;font-size:11px;}
+  .status-parcial{background:var(--accent-soft);color:#8A5F1B;}
+  .runs-table td.err{max-width:340px;word-break:break-word;}
+  .note{font-size:12px;color:var(--ink-faint);margin:8px 0 0;}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <aside class="rail">
+    <div class="rail-brand">
+      <div class="mark">Buscador</div>
+      <div class="sub">Monitor do Diário Oficial da União por palavras-chave</div>
+    </div>
+    <nav class="rail-nav">
+      <button class="active" data-goto="painel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0v-9a2 2 0 0 1 2-2h2"></path></svg>Painel</button>
+      <button data-goto="palavras"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="9.5" r=".5" fill="currentColor"></circle><path d="M9.586 5.586A2 2 0 0 0 8.172 5H3a1 1 0 0 0-1 1v5.172a2 2 0 0 0 .586 1.414L8.29 18.29a2.426 2.426 0 0 0 3.42 0l3.58-3.58a2.426 2.426 0 0 0 0-3.42z"></path></svg>Palavras-chave</button>
+      <button data-goto="manual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"></path></svg>Adicionar manualmente</button>
+      <button data-goto="execucoes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>Execuções</button>
+    </nav>
+    <div class="rail-foot">Busca automática todo dia às 08:00 (Brasília) pelo GitHub.<br>Última atualização: <strong id="railGerado">—</strong></div>
+  </aside>
+
+  <main>
+    <div class="topbar">
+      <div>
+        <h1>Painel de monitoramento</h1>
+        <p>Publicações do Diário Oficial da União que citam as suas palavras-chave, com link para a matéria original.</p>
+      </div>
+      <button class="btn btn-primary" id="btnExec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>Ver execuções</button>
+    </div>
+
+    <div class="banner" id="banner"></div>
+
+    <div class="stats">
+      <div class="stat"><div class="num" id="statTotal">0</div><div class="lbl">Publicações no radar</div></div>
+      <div class="stat"><div class="num" id="statNovas">0</div><div class="lbl">Novas (não revisadas)</div></div>
+      <div class="stat"><div class="num" id="statKw">0</div><div class="lbl">Palavras-chave ativas</div></div>
+      <div class="stat"><div class="num" id="statExec">0</div><div class="lbl">Execuções registradas</div></div>
+    </div>
+
+    <section class="block" id="sec-palavras">
+      <div class="block-head"><h2>Palavras-chave monitoradas</h2></div>
+      <p class="hint">Clique em uma palavra para filtrar o painel. Para mudar a lista que o robô procura, edite o arquivo <strong>config.json</strong> no GitHub — a busca das 08:00 seguinte já usa a nova lista.</p>
+      <div class="chips" id="kwChips"></div>
+    </section>
+
+    <section class="block" id="sec-painel">
+      <div class="block-head">
+        <h2>Publicações</h2>
+        <span class="count" id="feedCount"></span>
+      </div>
+      <div class="filter-row">
+        <input type="text" id="filtroTexto" placeholder="Filtrar por texto (título, órgão, resumo)...">
+        <label><input type="checkbox" id="ocultarRevisadas"> Ocultar revisadas</label>
+      </div>
+      <div class="feed-list" id="feedList"></div>
+    </section>
+
+    <section class="block" id="sec-manual">
+      <div class="block-head"><h2>Adicionar publicação manualmente</h2></div>
+      <div class="manual-card">
+        <div class="manual-grid">
+          <div class="field"><label>Número</label><input type="text" id="mNumero" placeholder="Ex.: 123"></div>
+          <div class="field"><label>Ano</label><input type="text" id="mAno" placeholder="Ex.: 2026"></div>
+          <div class="field"><label>Categoria / órgão</label><input type="text" id="mCategoria" placeholder="Ex.: Secretaria de Saúde"></div>
+          <div class="field"><label>Palavra-chave correspondente</label><input type="text" id="mKeyword" placeholder="Qual palavra-chave bateu"></div>
+          <div class="field full"><label>Link (PDF ou página)</label><input type="text" id="mUrl" placeholder="https://..."></div>
+          <div class="field full"><label>Descrição original</label><textarea id="mDescricao" placeholder="Texto/ementa, como publicada"></textarea></div>
+          <div class="field full"><label>Resumo (opcional)</label><textarea id="mResumo" placeholder="Resumo em linguagem simples, se já tiver um"></textarea></div>
+        </div>
+        <button class="btn btn-primary btn-small" id="btnAddManual">Adicionar à lista</button>
+        <p class="note">Itens manuais ficam salvos só neste navegador (não vão para o GitHub).</p>
+      </div>
+    </section>
+
+    <section class="block" id="sec-execucoes">
+      <div class="block-head"><h2>Execuções de busca</h2></div>
+      <table class="runs-table">
+        <thead><tr><th>Início</th><th>Status</th><th>Matérias varridas</th><th>Encontradas</th><th>Novas</th><th>Erro</th></tr></thead>
+        <tbody id="runsBody"></tbody>
+      </table>
+    </section>
+  </main>
+</div>
+
+<script>
+(function(){
+  const LS_MANUAL = 'buscadordou_manual';
+  const LS_STATE  = 'buscadordou_revisadas';
+
+  function load(key, fallback){ try{ const v = JSON.parse(localStorage.getItem(key)); return v || fallback; } catch(e){ return fallback; } }
+  function save(key, val){ try{ localStorage.setItem(key, JSON.stringify(val)); } catch(e){} }
+
+  let dados = {gerado_em:null, keywords:[], secoes:[], pubs:[], runs:[]};
+  let manual = load(LS_MANUAL, []);
+  let revisadas = load(LS_STATE, {});
+  let kwAtiva = null;
+
+  const $ = id => document.getElementById(id);
+  const escapeHtml = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const safeUrl = u => /^https?:\/\//i.test(String(u||'').trim()) ? String(u).trim() : '';
+  const semAcento = s => String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+  const fmtData = iso => { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso||''); return m ? m[3]+'/'+m[2]+'/'+m[1] : ''; };
+  const fmtDataHora = iso => iso ? new Date(iso).toLocaleString('pt-BR', {timeZone:'America/Sao_Paulo'}) : '—';
+
+  function todas(){
+    const auto = (dados.pubs||[]).map(p => ({...p}));
+    const man = manual.map(m => ({
+      id:m.id, manual:true, titulo:m.titulo, orgao:m.categoria, tipo:'', resumo:m.resumo || m.descricao,
+      url:m.url, secao:'', edicao:'', pagina:'', data_publicacao:m.data, first_seen_at:m.data,
+      palavras: m.keyword ? [m.keyword] : []
+    }));
+    return [...man, ...auto].sort((a,b) => (b.first_seen_at||'').localeCompare(a.first_seen_at||'') || (b.data_publicacao||'').localeCompare(a.data_publicacao||''));
+  }
+
+  function banner(html){ const b = $('banner'); b.innerHTML = html; b.classList.add('show'); }
+
+  function render(){
+    $('railGerado').textContent = dados.gerado_em ? fmtDataHora(dados.gerado_em) : 'ainda não rodou';
+
+    const kws = dados.keywords || [];
+    const wrap = $('kwChips'); wrap.innerHTML = '';
+    if(!kws.length){
+      wrap.innerHTML = '<div class="empty-hint">As palavras-chave aparecem aqui depois da primeira execução do robô.</div>';
+    } else {
+      kws.forEach(k => {
+        const c = document.createElement('div');
+        c.className = 'chip clickable' + (kwAtiva === k ? ' active' : '');
+        c.textContent = k;
+        c.addEventListener('click', () => { kwAtiva = (kwAtiva === k ? null : k); render(); });
+        wrap.appendChild(c);
+      });
+    }
+
+    const todasPubs = todas();
+    const q = semAcento($('filtroTexto').value.trim());
+    const ocultar = $('ocultarRevisadas').checked;
+
+    const visiveis = todasPubs.filter(p => {
+      if(kwAtiva && !(p.palavras||[]).includes(kwAtiva)) return false;
+      if(ocultar && revisadas[p.id]) return false;
+      if(q){
+        const hay = semAcento([p.titulo,p.orgao,p.resumo,p.tipo,(p.palavras||[]).join(' ')].join(' '));
+        if(!hay.includes(q)) return false;
+      }
+      return true;
+    });
+
+    const feed = $('feedList'); feed.innerHTML = '';
+    if(!visiveis.length){
+      feed.innerHTML = '<div class="feed-empty">' + (todasPubs.length ? 'Nenhuma publicação com esse filtro.' : 'Nenhuma publicação registrada ainda — o robô roda todo dia às 08:00.') + '</div>';
+    } else {
+      visiveis.forEach(p => {
+        const feita = !!revisadas[p.id];
+        const link = safeUrl(p.url);
+        const tituloHtml = link ? `<a href="${escapeHtml(link)}" target="_blank" rel="noopener">${escapeHtml(p.titulo)}</a>` : escapeHtml(p.titulo);
+        const local = [p.secao, p.edicao ? 'Edição ' + p.edicao : '', p.pagina ? 'pág. ' + p.pagina : ''].filter(Boolean).join(' · ');
+        const row = document.createElement('div');
+        row.className = 'pub' + (feita ? ' done' : '');
+        row.innerHTML = `
+          <div class="pub-main">
+            <div class="pub-meta">
+              ${p.manual ? '<span class="badge-manual">Manual</span>' : ''}
+              <span class="badge-cat">${escapeHtml(p.orgao || 'Sem órgão')}</span>
+              ${p.tipo ? '<span>·</span><span>' + escapeHtml(p.tipo) + '</span>' : ''}
+              <span>·</span><span>${fmtData(p.data_publicacao)}</span>
+              ${(p.palavras||[]).length > 1 ? '<span class="badge">' + p.palavras.length + ' palavras-chave</span>' : ''}
+            </div>
+            <h3>${tituloHtml}</h3>
+            ${p.resumo ? '<p><span class="ia-tag">Prévia</span>' + escapeHtml(p.resumo) + '</p>' : ''}
+            <div class="pub-tags">
+              ${(p.palavras||[]).length ? '<span class="tag-hit">bateu em: ' + escapeHtml(p.palavras.join(', ')) + '</span>' : ''}
+              ${local ? '<span class="tag-hit">' + escapeHtml(local) + '</span>' : ''}
+              ${link ? '<a class="pdf-link" href="' + escapeHtml(link) + '" target="_blank" rel="noopener">Abrir no DOU <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></a>' : ''}
+            </div>
+          </div>
+          <div class="pub-actions">
+            <button class="icon-btn ${feita ? 'on' : ''}" data-a="rev" data-id="${escapeHtml(p.id)}" title="Marcar como revisado" aria-label="Marcar como revisado">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </button>
+            ${p.manual ? '<button class="icon-btn" data-a="del" data-id="' + escapeHtml(p.id) + '" title="Remover" aria-label="Remover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>' : ''}
+          </div>`;
+        feed.appendChild(row);
+      });
+      feed.querySelectorAll('[data-a="rev"]').forEach(b => b.addEventListener('click', () => {
+        const id = b.dataset.id; revisadas[id] = !revisadas[id]; if(!revisadas[id]) delete revisadas[id];
+        save(LS_STATE, revisadas); render();
+      }));
+      feed.querySelectorAll('[data-a="del"]').forEach(b => b.addEventListener('click', () => {
+        manual = manual.filter(m => m.id !== b.dataset.id); save(LS_MANUAL, manual); render();
+      }));
+    }
+
+    const runs = dados.runs || [];
+    const body = $('runsBody'); body.innerHTML = '';
+    if(!runs.length){
+      body.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--ink-faint);padding:20px 0;">Nenhuma execução registrada ainda.</td></tr>';
+    } else {
+      runs.slice(0, 15).forEach(r => {
+        const cls = r.status === 'concluida' ? 'status-concluida' : (r.status === 'erro' ? 'status-erro' : 'status-parcial');
+        const lbl = r.status === 'concluida' ? 'Concluída' : (r.status === 'erro' ? 'Erro' : 'Parcial');
+        body.insertAdjacentHTML('beforeend', `<tr>
+          <td>${fmtDataHora(r.started_at)}</td>
+          <td><span class="status-pill ${cls}">${lbl}</span></td>
+          <td>${r.varridas ?? '—'}</td>
+          <td>${r.total_encontradas ?? '—'}</td>
+          <td>${r.novas ?? '—'}</td>
+          <td class="err">${r.erro ? escapeHtml(r.erro) : '—'}</td>
+        </tr>`);
+      });
+    }
+
+    $('feedCount').textContent = visiveis.length + (visiveis.length !== todasPubs.length ? ' de ' + todasPubs.length : '') + ' publicação(ões)';
+    $('statTotal').textContent = todasPubs.length;
+    $('statNovas').textContent = todasPubs.filter(p => !revisadas[p.id]).length;
+    $('statKw').textContent = kws.length;
+    $('statExec').textContent = runs.length;
+  }
+
+  $('filtroTexto').addEventListener('input', render);
+  $('ocultarRevisadas').addEventListener('change', render);
+  $('btnExec').addEventListener('click', () => $('sec-execucoes').scrollIntoView({behavior:'smooth', block:'start'}));
+
+  $('btnAddManual').addEventListener('click', () => {
+    const v = id => $(id).value.trim();
+    const numero = v('mNumero'), url = v('mUrl'), descricao = v('mDescricao');
+    if(!numero){ $('mNumero').focus(); return; }
+    if(!descricao){ $('mDescricao').focus(); return; }
+    const ano = v('mAno');
+    manual.unshift({
+      id:'m' + Date.now(), titulo:'Resolução nº ' + numero + (ano ? '/' + ano : ''),
+      categoria:v('mCategoria') || 'Sem categoria', keyword:v('mKeyword'), url:url,
+      descricao:descricao, resumo:v('mResumo'), data:new Date().toISOString().slice(0,10)
+    });
+    save(LS_MANUAL, manual);
+    ['mNumero','mAno','mCategoria','mKeyword','mUrl','mDescricao','mResumo'].forEach(id => $(id).value = '');
+    render();
+  });
+
+  document.querySelectorAll('.rail-nav button').forEach(btn => btn.addEventListener('click', () => {
+    document.querySelectorAll('.rail-nav button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const alvo = $('sec-' + btn.dataset.goto);
+    if(alvo) alvo.scrollIntoView({behavior:'smooth', block:'start'});
+  }));
+
+  function aplicarArquivo(texto){
+    try{
+      const d = JSON.parse(texto);
+      if(!d || !Array.isArray(d.pubs)) throw new Error('formato inesperado');
+      dados = d; $('banner').classList.remove('show'); render();
+    } catch(e){ alert('Não consegui ler esse arquivo como dados.json: ' + e.message); }
+  }
+
+  async function carregar(){
+    try{
+      const r = await fetch('dados.json?ts=' + Date.now(), {cache:'no-store'});
+      if(!r.ok) throw new Error('HTTP ' + r.status);
+      dados = await r.json();
+    } catch(e){
+      banner('<strong>Não consegui carregar o dados.json.</strong> Isso é normal quando este arquivo é aberto direto do computador (o navegador bloqueia). Abra pelo endereço do GitHub Pages ou selecione o arquivo <strong>dados.json</strong> aqui:<br><input type="file" id="arqDados" accept=".json,application/json">');
+      const inp = $('arqDados');
+      if(inp) inp.addEventListener('change', () => { const f = inp.files[0]; if(f) f.text().then(aplicarArquivo); });
+    }
+    render();
+  }
+
+  render();
+  carregar();
+})();
+</script>
+</body>
+</html>
