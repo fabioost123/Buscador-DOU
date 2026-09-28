@@ -1,4 +1,5 @@
 {
+  "municipio": "Capitão Leônidas Marques",
   "termos": [
     "Capitão Leônidas Marques",
     "atenção primária",
@@ -9,6 +10,14 @@
     "agente comunitário de saúde",
     "piso da atenção primária"
   ],
+  "termos_prioritarios": ["SISAB", "e-SUS", "Previne Brasil", "piso da atenção primária"],
+  "unidades_de_interesse": ["SAPS"],
   "secoes": ["do1"],
-  "dias_retroativos": 1
+  "dias_retroativos": 1,
+  "notas_ms": {
+    "ativo": true,
+    "so_com_palavras_chave": false,
+    "janela_dias": 15,
+    "max_paginas": 3
+  }
 }
