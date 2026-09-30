@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-29T13:48:30-03:00",
+ "gerado_em": "2026-09-30T13:41:05-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -18,6 +18,27 @@
   "DO1"
  ],
  "pubs": [
+  {
+   "id": "nms-a89acfb25848",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica nº 41/2026-CGARB/DEDT/SVSA/MS",
+   "tipo": "Nota Técnica",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "CGARB/DEDT/SVSA/MS",
+   "detalhe": "CGARB/DEDT/SVSA/MS",
+   "resumo": "Orientações para a implementação integrada das tecnologias de controle do Aedes aegypti e Aedes albopictus, conforme as Diretrizes Nacionais para Prevenção e Controle das Arboviroses Urbanas (Brasil, 2025).",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-41-2026-cgarb-dedt-svsa-ms.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-09-29",
+   "first_seen_at": "2026-09-29",
+   "palavras": [],
+   "nivel": "baixo",
+   "motivo": "Não foi possível confirmar município, abrangência geral ou programa específico aplicável.",
+   "impacto": "Impacto municipal não identificado automaticamente.",
+   "tema": "Orientações para a implementação integrada das tecnologias de controle do Aedes…"
+  },
   {
    "id": "nms-bf6501da9b6a",
    "fonte": "Notas MS",
@@ -188,6 +209,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20260930134105",
+   "started_at": "2026-09-30T13:41:05-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 804,
+   "total_encontradas": 7,
+   "novas": 1,
+   "erro": null
+  },
   {
    "id": "r20260929134830",
    "started_at": "2026-09-29T13:48:30-03:00",
