@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-09-30T13:41:05-03:00",
+ "gerado_em": "2026-10-01T14:17:00-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -18,6 +18,27 @@
   "DO1"
  ],
  "pubs": [
+  {
+   "id": "nms-a2184a702ccc",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica Conjunta nº 325/2026-COVISI/CGGAS/DAPSI/SESAI/MS",
+   "tipo": "Nota Técnica Conjunta",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "COVISI/CGGAS/DAPSI/SESAI/MS",
+   "detalhe": "COVISI/CGGAS/DAPSI/SESAI/MS",
+   "resumo": "Orientações para implementação da dose zero (D0) da vacinação contra o sarampo, em crianças indígenas de 6 meses a 11 meses e 29 dias nos Distritos Sanitários Especiais Indígenas (DSEIs) Alto Rio Solimões, Alto Rio Juruá, Vale do Javari, Alto Rio Purus, Médio Rio Solimões e Afluentes,Cuiabá, Mato Grosso do Sul, Vilhena, Porto Velho e Alto Rio Negro.",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-325-2026-covisi-cggas-dapsi-sesai-ms.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-09-30",
+   "first_seen_at": "2026-09-30",
+   "palavras": [],
+   "nivel": "baixo",
+   "motivo": "Não foi possível confirmar município, abrangência geral ou programa específico aplicável.",
+   "impacto": "Impacto municipal não identificado automaticamente.",
+   "tema": "Orientações para implementação da dose zero (D0) da vacinação contra o sarampo…"
+  },
   {
    "id": "nms-a89acfb25848",
    "fonte": "Notas MS",
@@ -209,6 +230,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261001141700",
+   "started_at": "2026-10-01T14:17:00-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 758,
+   "total_encontradas": 8,
+   "novas": 1,
+   "erro": null
+  },
   {
    "id": "r20260930134105",
    "started_at": "2026-09-30T13:41:05-03:00",
