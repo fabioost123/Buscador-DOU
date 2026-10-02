@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-01T14:17:00-03:00",
+ "gerado_em": "2026-10-02T13:30:53-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -18,6 +18,98 @@
   "DO1"
  ],
  "pubs": [
+  {
+   "id": "nms-f87042b8a7f3",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica nº 12/2026-DEAPS/SAPS/MS",
+   "tipo": "Nota Técnica",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "DEAPS/SAPS/MS",
+   "detalhe": "DEAPS/SAPS/MS",
+   "resumo": "Esta nota tem por objetivo apresentar a metodologia de cálculo do desempenho quadrimestral do Componente III — Qualidade, para as equipes de Saúde da Família Ribeirinha (eSFR), equipes de Consultório na Rua (eCR) e equipes de Atenção Primária Prisional (eAPP), para fins de cofinanciamento federal da Atenção Primária à Saúde (APS) no âmbito do Sistema Único de Saúde (SUS).",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-12-2026-deaps-saps-ms.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-10-02",
+   "first_seen_at": "2026-10-02",
+   "palavras": [
+    "atenção primária"
+   ],
+   "nivel": "medio",
+   "motivo": "Cita atenção primária; Assinada pela SAPS (Atenção Primária).",
+   "impacto": "Relacionada a atenção primária; confira na publicação se afeta rotinas, prazos ou repasses do município.",
+   "tema": "Esta nota tem por objetivo apresentar a metodologia de cálculo do desempenho…"
+  },
+  {
+   "id": "nms-f1b003697207",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica nº 8/2026-DEAPS/SAPS/MS",
+   "tipo": "Nota Técnica",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "DEAPS/SAPS/MS",
+   "detalhe": "DEAPS/SAPS/MS",
+   "resumo": "Esta nota tem por objetivo descrever a metodologia utilizada para calcular o desempenho quadrimestral dos Componentes II — Vínculo e Acompanhamento Territorial e III — Qualidade, para as equipes de Saúde da Família (eSF), equipes de Saúde Bucal (eSB) e equipes Multiprofissionais na Atenção Primária à Saúde (eMulti), previstos na Portaria GM/MS nº 3.493, de 10 de abril de 2024, para fins de cofinanciamento federal da Atenção Primária à Saúde (APS) no âmbito do Sistema Único de Saúde (SUS).",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-8-2026-deaps-saps-ms.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-10-02",
+   "first_seen_at": "2026-10-02",
+   "palavras": [
+    "atenção primária",
+    "eMulti"
+   ],
+   "nivel": "medio",
+   "motivo": "Cita atenção primária, eMulti; Assinada pela SAPS (Atenção Primária).",
+   "impacto": "Relacionada a atenção primária, eMulti; confira na publicação se afeta rotinas, prazos ou repasses do município.",
+   "tema": "Esta nota tem por objetivo descrever a metodologia utilizada para calcular o…"
+  },
+  {
+   "id": "nms-24250bb0ddb2",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica nº 74/2026-CGAN/DEPROS/SAPS/MS",
+   "tipo": "Nota Técnica",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "CGAN/DEPROS/SAPS/MS",
+   "detalhe": "CGAN/DEPROS/SAPS/MS",
+   "resumo": "Recomendações para organização da Atenção Nutricional e promoção da Segurança Alimentar e Nutricional para as populações indígenas Warao em contextos de vulnerabilidade dispostas nos municípios brasileiros.",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-74-2026-cgan-depros-saps-ms.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-10-01",
+   "first_seen_at": "2026-10-01",
+   "palavras": [],
+   "nivel": "medio",
+   "motivo": "Assinada pela SAPS (Atenção Primária).",
+   "impacto": "Relacionada a Atenção Primária; confira na publicação se afeta rotinas, prazos ou repasses do município.",
+   "tema": "Recomendações para organização da Atenção Nutricional e promoção da Segurança…"
+  },
+  {
+   "id": "nms-232218a4c3a4",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica Conjunta nº 255/2026-COAE/CGESCO/DESF/SAPS/MS",
+   "tipo": "Nota Técnica Conjunta",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "COAE/CGESCO/DESF/SAPS/MS",
+   "detalhe": "COAE/CGESCO/DESF/SAPS/MS",
+   "resumo": "Orientações às equipes de Atenção Primária à Saúde sobre a utilização da funcionalidade de Estratificação de Vulnerabilidade Familiar no Prontuário Eletrônico do e-SUS APS.",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-255-2026-coae-cgesco-desf-saps-ms.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-10-01",
+   "first_seen_at": "2026-10-01",
+   "palavras": [
+    "atenção primária",
+    "e-SUS"
+   ],
+   "nivel": "alto",
+   "motivo": "Cita e-SUS, atenção primária; Assinada pela SAPS (Atenção Primária).",
+   "impacto": "Relacionada a e-SUS, atenção primária; confira na publicação se afeta rotinas, prazos ou repasses do município.",
+   "tema": "Orientações às equipes de Atenção Primária à Saúde sobre a utilização da…"
+  },
   {
    "id": "nms-a2184a702ccc",
    "fonte": "Notas MS",
@@ -230,6 +322,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261002133053",
+   "started_at": "2026-10-02T13:30:53-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 738,
+   "total_encontradas": 12,
+   "novas": 4,
+   "erro": null
+  },
   {
    "id": "r20261001141700",
    "started_at": "2026-10-01T14:17:00-03:00",
