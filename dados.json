@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-02T13:30:53-03:00",
+ "gerado_em": "2026-10-03T12:03:22-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -64,6 +64,48 @@
    "motivo": "Cita atenção primária, eMulti; Assinada pela SAPS (Atenção Primária).",
    "impacto": "Relacionada a atenção primária, eMulti; confira na publicação se afeta rotinas, prazos ou repasses do município.",
    "tema": "Esta nota tem por objetivo descrever a metodologia utilizada para calcular o…"
+  },
+  {
+   "id": "nms-5df84bfe9a4b",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica nº 77/2026-CGSH/DAET/SAES/MS",
+   "tipo": "Nota Técnica",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "CGSH/DAET/SAES/MS",
+   "detalhe": "CGSH/DAET/SAES/MS",
+   "resumo": "Regulamentação da fenotipagem eritrocitária para antígenos dos sistemas Rh, Kell, Duffy, Kidd e MNS em doadores de sangue e utilização de resultados históricos nas doações subsequentes.",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-77-2026.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-10-02",
+   "first_seen_at": "2026-10-02",
+   "palavras": [],
+   "nivel": "baixo",
+   "motivo": "Não foi possível confirmar município, abrangência geral ou programa específico aplicável.",
+   "impacto": "Impacto municipal não identificado automaticamente.",
+   "tema": "Regulamentação da fenotipagem eritrocitária para antígenos dos sistemas Rh…"
+  },
+  {
+   "id": "nms-e5659a204d63",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica nº 53/2026-CGZHA/DEDT/SVSA/MS",
+   "tipo": "Nota Técnica",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "CGZHA/DEDT/SVSA/MS",
+   "detalhe": "CGZHA/DEDT/SVSA/MS",
+   "resumo": "Esta Nota Técnica tem por finalidade incluir critério adicional na definição nacional de caso suspeito de FM, de modo a contemplar apresentações clínicas compatíveis com infecção por R.parkeri, bem como orientar a notificação, o registro, a investigação epidemiológica, o diagnóstico laboratorial e o manejo clínico desses casos.",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-53-2026-cgzha-dedt-svsa-ms.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-10-02",
+   "first_seen_at": "2026-10-02",
+   "palavras": [],
+   "nivel": "baixo",
+   "motivo": "Não foi possível confirmar município, abrangência geral ou programa específico aplicável.",
+   "impacto": "Impacto municipal não identificado automaticamente.",
+   "tema": "Esta Nota Técnica tem por finalidade incluir critério adicional na definição…"
   },
   {
    "id": "nms-24250bb0ddb2",
@@ -322,6 +364,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261003120322",
+   "started_at": "2026-10-03T12:03:22-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 445,
+   "total_encontradas": 14,
+   "novas": 2,
+   "erro": null
+  },
   {
    "id": "r20261002133053",
    "started_at": "2026-10-02T13:30:53-03:00",
