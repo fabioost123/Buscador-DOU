@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-05T16:31:25-03:00",
+ "gerado_em": "2026-10-06T14:03:18-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -18,6 +18,29 @@
   "DO1"
  ],
  "pubs": [
+  {
+   "id": "nms-97243604a179",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica Conjunta nº 304/2026/CGFAP/DESF/GAB/SAPS/FNSUS/GAB/SAES/MS",
+   "tipo": "Nota Técnica Conjunta",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "CGFAP/DESF/GAB/SAPS/FNSUS/GAB/SAES/MS",
+   "detalhe": "CGFAP/DESF/GAB/SAPS/FNSUS/GAB/SAES/MS",
+   "resumo": "Trata-se de Nota Técnica elaborada conjuntamente pela Secretaria de Atenção Primária à Saúde - SAPS e pela Secretaria de Atenção Especializada à Saúde - SAES, em que define os critérios de desassistência em Emergência em Saúde Pública no âmbito do Sistema Único de Saúde - SUS, para subsidiar análise da Portaria GM/MS nº 7.874, de 6 de agosto de 2025.",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-304.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-10-06",
+   "first_seen_at": "2026-10-06",
+   "palavras": [
+    "atenção primária"
+   ],
+   "nivel": "medio",
+   "motivo": "Cita atenção primária; Assinada pela SAPS (Atenção Primária).",
+   "impacto": "Relacionada a atenção primária; confira na publicação se afeta rotinas, prazos ou repasses do município.",
+   "tema": "Nota Técnica elaborada conjuntamente pela Secretaria de Atenção Primária à…"
+  },
   {
    "id": "nms-f87042b8a7f3",
    "fonte": "Notas MS",
@@ -364,6 +387,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261006140318",
+   "started_at": "2026-10-06T14:03:18-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 696,
+   "total_encontradas": 13,
+   "novas": 1,
+   "erro": null
+  },
   {
    "id": "r20261005163125",
    "started_at": "2026-10-05T16:31:25-03:00",
