@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-06T16:21:58-03:00",
+ "gerado_em": "2026-10-07T14:41:05-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -18,6 +18,29 @@
   "DO1"
  ],
  "pubs": [
+  {
+   "id": "nms-d56aa3f97c65",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica nº 38/2026-CGCRIAJ/DGCI/SAPS/MS",
+   "tipo": "Nota Técnica",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "CGCRIAJ/DGCI/SAPS/MS",
+   "detalhe": "CGCRIAJ/DGCI/SAPS/MS",
+   "resumo": "Orientações para a organização do cuidado integral à saúde das crianças indígenas Warao na Atenção Primária à Saúde.",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-38-2026-cgcriaj-dgci-saps-ms.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-10-07",
+   "first_seen_at": "2026-10-07",
+   "palavras": [
+    "atenção primária"
+   ],
+   "nivel": "medio",
+   "motivo": "Cita atenção primária; Assinada pela SAPS (Atenção Primária).",
+   "impacto": "Relacionada a atenção primária; confira na publicação se afeta rotinas, prazos ou repasses do município.",
+   "tema": "Orientações para a organização do cuidado integral à saúde das crianças…"
+  },
   {
    "id": "nms-97243604a179",
    "fonte": "Notas MS",
@@ -387,6 +410,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261007144105",
+   "started_at": "2026-10-07T14:41:05-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 683,
+   "total_encontradas": 14,
+   "novas": 1,
+   "erro": null
+  },
   {
    "id": "r20261006162158",
    "started_at": "2026-10-06T16:21:58-03:00",
