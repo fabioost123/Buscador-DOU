@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-07T14:41:05-03:00",
+ "gerado_em": "2026-10-08T14:45:15-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -40,6 +40,27 @@
    "motivo": "Cita atenção primária; Assinada pela SAPS (Atenção Primária).",
    "impacto": "Relacionada a atenção primária; confira na publicação se afeta rotinas, prazos ou repasses do município.",
    "tema": "Orientações para a organização do cuidado integral à saúde das crianças…"
+  },
+  {
+   "id": "nms-57814bbcd46f",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica Conjunta nº 335/2026-DGCI/DESF/SAPS/MS",
+   "tipo": "Nota Técnica Conjunta",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "DGCI/DESF/SAPS/MS",
+   "detalhe": "DGCI/DESF/SAPS/MS",
+   "resumo": "Organização do cuidado à saúde das mulheres indígenas Warao em território brasileiro, sob a perspectiva intercultural.",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-335-2026.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-10-07",
+   "first_seen_at": "2026-10-07",
+   "palavras": [],
+   "nivel": "medio",
+   "motivo": "Assinada pela SAPS (Atenção Primária).",
+   "impacto": "Relacionada a Atenção Primária; confira na publicação se afeta rotinas, prazos ou repasses do município.",
+   "tema": "Organização do cuidado à saúde das mulheres indígenas Warao em território…"
   },
   {
    "id": "nms-97243604a179",
@@ -410,6 +431,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261008144515",
+   "started_at": "2026-10-08T14:45:15-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 618,
+   "total_encontradas": 15,
+   "novas": 1,
+   "erro": null
+  },
   {
    "id": "r20261007144105",
    "started_at": "2026-10-07T14:41:05-03:00",
