@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-09T14:21:19-03:00",
+ "gerado_em": "2026-10-10T13:06:58-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -39,6 +39,27 @@
    "motivo": "Cita atenção primária.",
    "impacto": "Relacionada a atenção primária; confira na publicação se afeta rotinas, prazos ou repasses do município.",
    "tema": "RESOLUÇÃO CREMERJ Nº 372, DE 1º DE OUTUBRO DE 2026 Dispõe sobre os meios de…"
+  },
+  {
+   "id": "nms-cf2c6f8cb151",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica nº 53/2026 - COAFMO/CGAFAE/DAF/SCTIE/MS",
+   "tipo": "Nota Técnica",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "COAFMO/CGAFAE/DAF/SCTIE/MS",
+   "detalhe": "COAFMO/CGAFAE/DAF/SCTIE/MS",
+   "resumo": "Orienta a programação e a distribuição dos medicamentos oncológicos de aquisição centralizada pelo Ministério da Saúde, incluindo a complementação do 4º trimestre de 2026 e a programação do 1º trimestre de 2027, no âmbito da Assistência Farmacêutica em Oncologia (AF-Onco).",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-53-2026.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-10-09",
+   "first_seen_at": "2026-10-09",
+   "palavras": [],
+   "nivel": "baixo",
+   "motivo": "Não foi possível confirmar município, abrangência geral ou programa específico aplicável.",
+   "impacto": "Impacto municipal não identificado automaticamente.",
+   "tema": "Orienta a programação e a distribuição dos medicamentos oncológicos de…"
   },
   {
    "id": "nms-d56aa3f97c65",
@@ -453,6 +474,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261010130658",
+   "started_at": "2026-10-10T13:06:58-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 445,
+   "total_encontradas": 13,
+   "novas": 1,
+   "erro": null
+  },
   {
    "id": "r20261009142119",
    "started_at": "2026-10-09T14:21:19-03:00",
