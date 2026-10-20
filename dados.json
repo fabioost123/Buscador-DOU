@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-19T14:21:00-03:00",
+ "gerado_em": "2026-10-20T12:34:01-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -666,6 +666,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261020123401",
+   "started_at": "2026-10-20T12:34:01-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 819,
+   "total_encontradas": 12,
+   "novas": 0,
+   "erro": null
+  },
   {
    "id": "r20261019142100",
    "started_at": "2026-10-19T14:21:00-03:00",
