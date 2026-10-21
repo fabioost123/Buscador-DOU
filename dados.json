@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-20T12:34:01-03:00",
+ "gerado_em": "2026-10-21T12:50:33-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -18,6 +18,29 @@
   "DO1"
  ],
  "pubs": [
+  {
+   "id": "dou-b993c72b42b3",
+   "fonte": "DOU",
+   "titulo": "Portaria GM/ms Nº 12.293, DE 20 de outuBRO DE 2026",
+   "tipo": "Portaria",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "Ministério da Saúde/Gabinete do Ministro",
+   "resumo": "Portaria GM/ms Nº 12.293, DE 20 de outuBRO DE 2026 Altera o Anexo 6 do Anexo XXII da Portaria de Consolidação GM/MS nº 2, de 28 de setembro de 2017, para inclusão da ocupação Médico Oftalmologista (CBO 2252-65) no rol de categorias profissionais elegíveis para composição das equipes Multiprofissionais na Atenção Primária à Saúde - eMulti. O MINISTRO DE ESTADO DA SAÚDE, no uso das atribuições que l...",
+   "url": "https://www.in.gov.br/web/dou/-/portaria-gm/ms-n-12.293-de-20-de-outubro-de-2026-739407892",
+   "secao": "DO1",
+   "edicao": "199",
+   "pagina": "64",
+   "data_publicacao": "2026-10-21",
+   "first_seen_at": "2026-10-21",
+   "palavras": [
+    "atenção primária",
+    "eMulti"
+   ],
+   "nivel": "medio",
+   "motivo": "Cita atenção primária, eMulti.",
+   "impacto": "Relacionada a atenção primária, eMulti; confira na publicação se afeta rotinas, prazos ou repasses do município.",
+   "tema": "Portaria GM/ms Nº 12.293, DE 20 de outuBRO DE 2026 Altera o Anexo 6 do Anexo…"
+  },
   {
    "id": "dou-ef468470dc90",
    "fonte": "DOU",
@@ -666,6 +689,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261021125033",
+   "started_at": "2026-10-21T12:50:33-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 739,
+   "total_encontradas": 13,
+   "novas": 1,
+   "erro": null
+  },
   {
    "id": "r20261020123401",
    "started_at": "2026-10-20T12:34:01-03:00",
