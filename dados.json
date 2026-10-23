@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-22T12:47:55-03:00",
+ "gerado_em": "2026-10-23T12:39:02-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -18,6 +18,27 @@
   "DO1"
  ],
  "pubs": [
+  {
+   "id": "nms-0e2ab025a59b",
+   "fonte": "Notas MS",
+   "titulo": "Nota técnica nº 47/2026-CGURG/DAHUD/SAES/MS",
+   "tipo": "Nota técnica",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "CGURG/DAHUD/SAES/MS",
+   "detalhe": "CGURG/DAHUD/SAES/MS",
+   "resumo": "Trata-se de orientações às equipes dos serviços de urgência e emergência para o atendimento e manejo às pessoas em situação de rua, no âmbito do Serviço de Atendimento Móvel de Urgência - SAMU 192 e das Portas de Urgência préhospitalares e hospitalares da Rede de Atenção às Urgências e Emergências (RUE).",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-47-2026.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-10-22",
+   "first_seen_at": "2026-10-22",
+   "palavras": [],
+   "nivel": "baixo",
+   "motivo": "Não foi possível confirmar município, abrangência geral ou programa específico aplicável.",
+   "impacto": "Impacto municipal não identificado automaticamente.",
+   "tema": "Orientações às equipes dos serviços de urgência e emergência para o atendimento…"
+  },
   {
    "id": "dou-b993c72b42b3",
    "fonte": "DOU",
@@ -689,6 +710,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261023123902",
+   "started_at": "2026-10-23T12:39:02-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 624,
+   "total_encontradas": 10,
+   "novas": 1,
+   "erro": null
+  },
   {
    "id": "r20261022124755",
    "started_at": "2026-10-22T12:47:55-03:00",
