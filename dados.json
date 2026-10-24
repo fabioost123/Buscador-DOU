@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-23T12:39:02-03:00",
+ "gerado_em": "2026-10-24T11:16:50-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -18,6 +18,50 @@
   "DO1"
  ],
  "pubs": [
+  {
+   "id": "nms-fbe672b9d9a3",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica nº 1/2026-SVSA/MS",
+   "tipo": "Nota Técnica",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "SVSA/MS",
+   "detalhe": "SVSA/MS",
+   "resumo": "Estabelece orientações para a avaliação e o acompanhamento de indicadores de qualidade dos dados referentes à vigilância de anomalias congênitas registradas no Sistema de Informações sobre Nascidos Vivos (Sinasc).",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-01-2026-svsa.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-10-23",
+   "first_seen_at": "2026-10-23",
+   "palavras": [],
+   "nivel": "baixo",
+   "motivo": "Não foi possível confirmar município, abrangência geral ou programa específico aplicável.",
+   "impacto": "Impacto municipal não identificado automaticamente.",
+   "tema": "Estabelece orientações para a avaliação e o acompanhamento de indicadores de…"
+  },
+  {
+   "id": "nms-5b5976bc4f38",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica nº 12/2026-SVSA/MS",
+   "tipo": "Nota Técnica",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "SVSA/MS",
+   "detalhe": "SVSA/MS",
+   "resumo": "Trata-se de orientações para qualificação dos dados referentes à doença falciforme (CID-10: D57) registrados no e-SUS Sinan.",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-12-2026.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-10-23",
+   "first_seen_at": "2026-10-23",
+   "palavras": [
+    "e-SUS"
+   ],
+   "nivel": "alto",
+   "motivo": "Cita e-SUS.",
+   "impacto": "Relacionada a e-SUS; confira na publicação se afeta rotinas, prazos ou repasses do município.",
+   "tema": "Orientações para qualificação dos dados referentes à doença falciforme (CID-10…"
+  },
   {
    "id": "nms-0e2ab025a59b",
    "fonte": "Notas MS",
@@ -710,6 +754,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261024111650",
+   "started_at": "2026-10-24T11:16:50-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 316,
+   "total_encontradas": 12,
+   "novas": 2,
+   "erro": null
+  },
   {
    "id": "r20261023123902",
    "started_at": "2026-10-23T12:39:02-03:00",
