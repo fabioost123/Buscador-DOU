@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-28T14:00:05-03:00",
+ "gerado_em": "2026-10-29T14:19:14-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -18,6 +18,69 @@
   "DO1"
  ],
  "pubs": [
+  {
+   "id": "nms-f3a5f7c21470",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica Conjunta nº 354/2026 - CGZHA/DEDT/SVSA/MS, CGLAB/SVSA/MS",
+   "tipo": "Nota Técnica Conjunta",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "CGZHA/DEDT/SVSA/MS, CGLAB/SVSA/MS",
+   "detalhe": "CGZHA/DEDT/SVSA/MS, CGLAB/SVSA/MS",
+   "resumo": "Ações para enfrentamento da leptospirose em eventos extremos relacionados ao El Niño.",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-3542026.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-10-29",
+   "first_seen_at": "2026-10-29",
+   "palavras": [],
+   "nivel": "baixo",
+   "motivo": "Não foi possível confirmar município, abrangência geral ou programa específico aplicável.",
+   "impacto": "Impacto municipal não identificado automaticamente.",
+   "tema": "Ações para enfrentamento da leptospirose em eventos extremos relacionados ao El…"
+  },
+  {
+   "id": "nms-4449824b6c56",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica nº 140/2026-CGRAR/DAET/SAES/MS",
+   "tipo": "Nota Técnica",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "CGRAR/DAET/SAES/MS",
+   "detalhe": "CGRAR/DAET/SAES/MS",
+   "resumo": "Referências para classificação de variantes Germinativas para o Sequenciamento Completo do Exoma (SCE) no SUS.",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-140-2026-cgrar-daet-saes-ms/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-10-29",
+   "first_seen_at": "2026-10-29",
+   "palavras": [],
+   "nivel": "baixo",
+   "motivo": "Não foi possível confirmar município, abrangência geral ou programa específico aplicável.",
+   "impacto": "Impacto municipal não identificado automaticamente.",
+   "tema": "Referências para classificação de variantes Germinativas para o Sequenciamento…"
+  },
+  {
+   "id": "nms-227262cc6ae2",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica nº 121/2026-CGRAR/DAET/SAES/MS",
+   "tipo": "Nota Técnica",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "CGRAR/DAET/SAES/MS",
+   "detalhe": "CGRAR/DAET/SAES/MS",
+   "resumo": "Diretriz de reporte de resultados e solicitação de Duos ou Trios por Sequenciamento Completo do Exoma (SCE).",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-121-2026-cgrar-daet-saes-ms/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-10-29",
+   "first_seen_at": "2026-10-29",
+   "palavras": [],
+   "nivel": "baixo",
+   "motivo": "Não foi possível confirmar município, abrangência geral ou programa específico aplicável.",
+   "impacto": "Impacto municipal não identificado automaticamente.",
+   "tema": "Diretriz de reporte de resultados e solicitação de Duos ou Trios por…"
+  },
   {
    "id": "nms-fbe672b9d9a3",
    "fonte": "Notas MS",
@@ -754,6 +817,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261029141914",
+   "started_at": "2026-10-29T14:19:14-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 631,
+   "total_encontradas": 14,
+   "novas": 3,
+   "erro": null
+  },
   {
    "id": "r20261028140005",
    "started_at": "2026-10-28T14:00:05-03:00",
