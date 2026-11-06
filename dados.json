@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-05T15:32:37-03:00",
+ "gerado_em": "2026-11-06T14:49:20-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -18,6 +18,27 @@
   "DO1"
  ],
  "pubs": [
+  {
+   "id": "nms-54952dcd02a6",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica Conjunta nº 403/2026-DPNI/SVSA/MS",
+   "tipo": "Nota Técnica Conjunta",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "DPNI/SVSA/MS",
+   "detalhe": "DPNI/SVSA/MS",
+   "resumo": "Atualizações sobre a estratégia de vacinação contra a mpox, com base em novas evidências científicas e diante do cenário epidemiológico.",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-4032026-dpni-svsa-ms.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-11-05",
+   "first_seen_at": "2026-11-05",
+   "palavras": [],
+   "nivel": "baixo",
+   "motivo": "Não foi possível confirmar município, abrangência geral ou programa específico aplicável.",
+   "impacto": "Impacto municipal não identificado automaticamente.",
+   "tema": "Atualizações sobre a estratégia de vacinação contra a mpox, com base em novas…"
+  },
   {
    "id": "nms-f4fe84e11d3b",
    "fonte": "Notas MS",
@@ -1034,6 +1055,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261106144920",
+   "started_at": "2026-11-06T14:49:20-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 672,
+   "total_encontradas": 10,
+   "novas": 1,
+   "erro": null
+  },
   {
    "id": "r20261105153237",
    "started_at": "2026-11-05T15:32:37-03:00",
