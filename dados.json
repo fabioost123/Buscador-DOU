@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-11T15:24:27-03:00",
+ "gerado_em": "2026-11-12T15:42:29-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -18,6 +18,28 @@
   "DO1"
  ],
  "pubs": [
+  {
+   "id": "dou-878c25044f63",
+   "fonte": "DOU",
+   "titulo": "PORTARIA GM/MS Nº 12.497, DE 10 DE NOVEMBRO DE 2026",
+   "tipo": "Portaria",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "Ministério da Saúde/Gabinete do Ministro",
+   "resumo": "PORTARIA GM/MS Nº 12.497, DE 10 DE NOVEMBRO DE 2026 Exclui propostas do Anexo da Portaria GM/MS nº 10.430, de 25 de março de 2026, que autoriza municípios a receberem recursos financeiros referentes ao incremento temporário ao custeio dos serviços de Atenção Primária à Saúde. O MINISTRO DE ESTADO DA SAÚDE SUBSTITUTO, no uso das atribuições que lhe conferem art. 87, incisos I e II, parágrafo único ...",
+   "url": "https://www.in.gov.br/web/dou/-/portaria-gm/ms-n-12.497-de-10-de-novembro-de-2026-743875582",
+   "secao": "DO1",
+   "edicao": "213",
+   "pagina": "104",
+   "data_publicacao": "2026-11-12",
+   "first_seen_at": "2026-11-12",
+   "palavras": [
+    "atenção primária"
+   ],
+   "nivel": "medio",
+   "motivo": "Cita atenção primária.",
+   "impacto": "Relacionada a atenção primária; confira na publicação se afeta rotinas, prazos ou repasses do município.",
+   "tema": "PORTARIA GM/MS Nº 12.497, DE 10 DE NOVEMBRO DE 2026 Exclui propostas do Anexo…"
+  },
   {
    "id": "dou-744127a551a8",
    "fonte": "DOU",
@@ -1099,6 +1121,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261112154229",
+   "started_at": "2026-11-12T15:42:29-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 784,
+   "total_encontradas": 10,
+   "novas": 1,
+   "erro": null
+  },
   {
    "id": "r20261111152427",
    "started_at": "2026-11-11T15:24:27-03:00",
