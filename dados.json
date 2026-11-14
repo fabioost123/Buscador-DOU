@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-13T15:24:58-03:00",
+ "gerado_em": "2026-11-14T13:51:34-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -18,6 +18,27 @@
   "DO1"
  ],
  "pubs": [
+  {
+   "id": "nms-8a931eb0ba50",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica nº 74/2026-COAFMO/CGAFAE/DAF/SCTIE/MS",
+   "tipo": "Nota Técnica",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "COAFMO/CGAFAE/DAF/SCTIE/MS",
+   "detalhe": "COAFMO/CGAFAE/DAF/SCTIE/MS",
+   "resumo": "Orientações para a operacionalização da disponibilização dos novos medicamentos oncológicos e indicações terapêuticas ofertados pelo Ministério da Saúde no âmbito do AF-Onco (pazopanibe, acetato de lanreotida, abemaciclibe, rituximabe e trastuzumabe).",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-74-2026-coafmo-cgafae-daf-sctie-ms.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-11-13",
+   "first_seen_at": "2026-11-13",
+   "palavras": [],
+   "nivel": "baixo",
+   "motivo": "Não foi possível confirmar município, abrangência geral ou programa específico aplicável.",
+   "impacto": "Impacto municipal não identificado automaticamente.",
+   "tema": "Orientações para a operacionalização da disponibilização dos novos medicamentos…"
+  },
   {
    "id": "dou-878c25044f63",
    "fonte": "DOU",
@@ -1121,6 +1142,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261114135134",
+   "started_at": "2026-11-14T13:51:34-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 388,
+   "total_encontradas": 5,
+   "novas": 1,
+   "erro": null
+  },
   {
    "id": "r20261113152458",
    "started_at": "2026-11-13T15:24:58-03:00",
