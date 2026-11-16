@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-15T14:34:42-03:00",
+ "gerado_em": "2026-11-16T17:49:13-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -18,6 +18,50 @@
   "DO1"
  ],
  "pubs": [
+  {
+   "id": "nms-b58b969922d5",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica nº 174/2026-CGSB/DESF/SAPS/MS",
+   "tipo": "Nota Técnica",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "CGSB/DESF/SAPS/MS",
+   "detalhe": "CGSB/DESF/SAPS/MS",
+   "resumo": "Orientações estratégicas para a preparação, resposta e recuperação das ações e dos serviços de saúde bucal diante de eventos associados às emergências climáticas.",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-174-2026-cgsb-desf-saps-ms.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-11-16",
+   "first_seen_at": "2026-11-16",
+   "palavras": [],
+   "nivel": "medio",
+   "motivo": "Assinada pela SAPS (Atenção Primária).",
+   "impacto": "Relacionada a Atenção Primária; confira na publicação se afeta rotinas, prazos ou repasses do município.",
+   "tema": "Orientações estratégicas para a preparação, resposta e recuperação das ações e…"
+  },
+  {
+   "id": "nms-7c87667ade36",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica Conjunta nº 399/2026-DEPROS/SAPS/DECAN/SAES/MS",
+   "tipo": "Nota Técnica Conjunta",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "DEPROS/SAPS/DECAN/SAES/MS",
+   "detalhe": "DEPROS/SAPS/DECAN/SAES/MS",
+   "resumo": "Orientações para a organização do rastreamento do câncer de cólon e reto (CCR) na Atenção Primária à Saúde (APS), por meio do Teste Imunoquímico Fecal (FIT).",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-399-2026-depros-saps-decan-saes-ms.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-11-16",
+   "first_seen_at": "2026-11-16",
+   "palavras": [
+    "atenção primária"
+   ],
+   "nivel": "medio",
+   "motivo": "Cita atenção primária; Assinada pela SAPS (Atenção Primária).",
+   "impacto": "Relacionada a atenção primária; confira na publicação se afeta rotinas, prazos ou repasses do município.",
+   "tema": "Orientações para a organização do rastreamento do câncer de cólon e reto (CCR)…"
+  },
   {
    "id": "nms-8a931eb0ba50",
    "fonte": "Notas MS",
@@ -1142,6 +1186,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261116174913",
+   "started_at": "2026-11-16T17:49:13-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 590,
+   "total_encontradas": 7,
+   "novas": 2,
+   "erro": null
+  },
   {
    "id": "r20261115143442",
    "started_at": "2026-11-15T14:34:42-03:00",
