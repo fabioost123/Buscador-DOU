@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-16T17:49:13-03:00",
+ "gerado_em": "2026-11-17T16:38:23-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -18,6 +18,71 @@
   "DO1"
  ],
  "pubs": [
+  {
+   "id": "dou-743f19d847f3",
+   "fonte": "DOU",
+   "titulo": "Portaria GM/MS Nº 12.507, DE 16 DE novembro DE 2026",
+   "tipo": "Portaria",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "Ministério da Saúde/Gabinete do Ministro",
+   "resumo": "Portaria GM/MS Nº 12.507, DE 16 DE novembro DE 2026 Exclui propostas do Anexo da Portaria GM/MS nº 12.437, de 29 de outubro de 2026, que autorizou municípios a receberem recursos financeiros referentes ao incremento temporário ao custeio dos serviços de Atenção Primária à Saúde - APS. O MINISTRO DE ESTADO DA SAÚDE, no uso das atribuições que lhe conferem o art. 87, parágrafo único, incisos I e II,...",
+   "url": "https://www.in.gov.br/web/dou/-/portaria-gm/ms-n-12.507-de-16-de-novembro-de-2026-744725241",
+   "secao": "DO1",
+   "edicao": "216",
+   "pagina": "75",
+   "data_publicacao": "2026-11-17",
+   "first_seen_at": "2026-11-17",
+   "palavras": [
+    "atenção primária"
+   ],
+   "nivel": "medio",
+   "motivo": "Cita atenção primária.",
+   "impacto": "Relacionada a atenção primária; confira na publicação se afeta rotinas, prazos ou repasses do município.",
+   "tema": "Portaria GM/MS Nº 12.507, DE 16 DE novembro DE 2026 Exclui propostas do Anexo…"
+  },
+  {
+   "id": "dou-daaecac0793d",
+   "fonte": "DOU",
+   "titulo": "Portaria GM/MS Nº 12.506, DE 16 DE novembro DE 2026",
+   "tipo": "Portaria",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "Ministério da Saúde/Gabinete do Ministro",
+   "resumo": "Portaria GM/MS Nº 12.506, DE 16 DE novembro DE 2026 Exclui proposta do Anexo da Portaria GM/MS nº 12.338, de 29 de outubro de 2026, que autorizou municípios a receberem recursos financeiros referentes ao incremento temporário ao custeio dos serviços de Atenção Primária à Saúde - APS. O MINISTRO DE ESTADO DA SAÚDE, no uso das atribuições que lhe conferem o art. 87, parágrafo único, incisos I e II, ...",
+   "url": "https://www.in.gov.br/web/dou/-/portaria-gm/ms-n-12.506-de-16-de-novembro-de-2026-744723897",
+   "secao": "DO1",
+   "edicao": "216",
+   "pagina": "75",
+   "data_publicacao": "2026-11-17",
+   "first_seen_at": "2026-11-17",
+   "palavras": [
+    "atenção primária"
+   ],
+   "nivel": "medio",
+   "motivo": "Cita atenção primária.",
+   "impacto": "Relacionada a atenção primária; confira na publicação se afeta rotinas, prazos ou repasses do município.",
+   "tema": "Portaria GM/MS Nº 12.506, DE 16 DE novembro DE 2026 Exclui proposta do Anexo da…"
+  },
+  {
+   "id": "nms-1f3678f3eb56",
+   "fonte": "Notas MS",
+   "titulo": "Nota Técnica Conjunta nº 405/2026-CGVDI-CGICI/DPNI/SVSA/MS",
+   "tipo": "Nota Técnica Conjunta",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "CGVDI-CGICI/DPNI/SVSA/MS",
+   "detalhe": "CGVDI-CGICI/DPNI/SVSA/MS",
+   "resumo": "Trata-se de alerta do sarampo e recomendações para prevenção, vigilância e resposta ao sarampo relacionadas à participação de viajantes brasileiros nos eventos religiosos associados à visita apostólica do Papa Leão XIV ao Peru, no período de 11 a 17 de novembro de 2026.",
+   "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-4052026-cgvdi-cgici-dpni-svsa-ms.pdf/view",
+   "secao": "",
+   "edicao": "",
+   "pagina": "",
+   "data_publicacao": "2026-11-17",
+   "first_seen_at": "2026-11-17",
+   "palavras": [],
+   "nivel": "baixo",
+   "motivo": "Não foi possível confirmar município, abrangência geral ou programa específico aplicável.",
+   "impacto": "Impacto municipal não identificado automaticamente.",
+   "tema": "Alerta do sarampo e recomendações para prevenção, vigilância e resposta ao…"
+  },
   {
    "id": "nms-b58b969922d5",
    "fonte": "Notas MS",
@@ -1186,6 +1251,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261117163823",
+   "started_at": "2026-11-17T16:38:23-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 919,
+   "total_encontradas": 10,
+   "novas": 3,
+   "erro": null
+  },
   {
    "id": "r20261116174913",
    "started_at": "2026-11-16T17:49:13-03:00",
