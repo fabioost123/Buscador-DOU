@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-17T16:38:23-03:00",
+ "gerado_em": "2026-11-18T16:15:04-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -18,6 +18,72 @@
   "DO1"
  ],
  "pubs": [
+  {
+   "id": "dou-c79f62d5a13b",
+   "fonte": "DOU",
+   "titulo": "Portaria GM/MS Nº 12.531, DE 17 DE novembro DE 2026",
+   "tipo": "Portaria",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "Ministério da Saúde/Gabinete do Ministro",
+   "resumo": "Portaria GM/MS Nº 12.531, DE 17 DE novembro DE 2026 Torna públicos os códigos homologados referentes aos Identificadores Nacionais de Equipe - INE das equipes da Atenção Primária à Saúde - APS credenciadas e cadastradas no Sistema de Cadastro Nacional de Estabelecimentos de Saúde - SCNES. O MINISTRO DE ESTADO DA SAÚDE, no uso das atribuições que lhe conferem os incisos I e II do parágrafo único do...",
+   "url": "https://www.in.gov.br/web/dou/-/portaria-gm/ms-n-12.531-de-17-de-novembro-de-2026-744963058",
+   "secao": "DO1",
+   "edicao": "217",
+   "pagina": "186",
+   "data_publicacao": "2026-11-18",
+   "first_seen_at": "2026-11-18",
+   "palavras": [
+    "atenção primária"
+   ],
+   "nivel": "medio",
+   "motivo": "Cita atenção primária.",
+   "impacto": "Relacionada a atenção primária; confira na publicação se afeta rotinas, prazos ou repasses do município.",
+   "tema": "Portaria GM/MS Nº 12.531, DE 17 DE novembro DE 2026 Torna públicos os códigos…"
+  },
+  {
+   "id": "dou-1d3eef6d095b",
+   "fonte": "DOU",
+   "titulo": "Portaria GM/MS Nº 12.513, DE 16 DE novembro DE 2026",
+   "tipo": "Portaria",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "Ministério da Saúde/Gabinete do Ministro",
+   "resumo": "Portaria GM/MS Nº 12.513, DE 16 DE novembro DE 2026 Exclui propostas do Anexo da Portaria GM/MS nº 12.433, de 29 de outubro de 2026, que autorizou municípios a receberem recursos financeiros referentes ao incremento temporário ao custeio dos serviços de Atenção Primária à Saúde. O MINISTRO DE ESTADO DA SAÚDE, no uso das atribuições que lhe conferem os incisos I e II do parágrafo único do art. 87 d...",
+   "url": "https://www.in.gov.br/web/dou/-/portaria-gm/ms-n-12.513-de-16-de-novembro-de-2026-744958025",
+   "secao": "DO1",
+   "edicao": "217",
+   "pagina": "181",
+   "data_publicacao": "2026-11-18",
+   "first_seen_at": "2026-11-18",
+   "palavras": [
+    "atenção primária"
+   ],
+   "nivel": "medio",
+   "motivo": "Cita atenção primária.",
+   "impacto": "Relacionada a atenção primária; confira na publicação se afeta rotinas, prazos ou repasses do município.",
+   "tema": "Portaria GM/MS Nº 12.513, DE 16 DE novembro DE 2026 Exclui propostas do Anexo…"
+  },
+  {
+   "id": "dou-e5131603b859",
+   "fonte": "DOU",
+   "titulo": "PORTARIA GM/MS Nº 12.530, DE 17 DE NOVEMBRO DE 2026",
+   "tipo": "Portaria",
+   "orgao": "Ministério da Saúde",
+   "hierarquia": "Ministério da Saúde/Gabinete do Ministro",
+   "resumo": "PORTARIA GM/MS Nº 12.530, DE 17 DE NOVEMBRO DE 2026 Torna públicos os códigos homologados referentes aos Identificadores Nacionais de Equipe - INE das equipes da Atenção Primária à Saúde - APS credenciadas e cadastradas no Sistema de Cadastro Nacional de Estabelecimentos de Saúde - SCNES. O MINISTRO DE ESTADO DA SAÚDE, no uso das atribuições que lhe conferem os incisos I e II do V do art. 87 da Co...",
+   "url": "https://www.in.gov.br/web/dou/-/portaria-gm/ms-n-12.530-de-17-de-novembro-de-2026-744957944",
+   "secao": "DO1",
+   "edicao": "217",
+   "pagina": "184",
+   "data_publicacao": "2026-11-18",
+   "first_seen_at": "2026-11-18",
+   "palavras": [
+    "atenção primária"
+   ],
+   "nivel": "medio",
+   "motivo": "Cita atenção primária.",
+   "impacto": "Relacionada a atenção primária; confira na publicação se afeta rotinas, prazos ou repasses do município.",
+   "tema": "PORTARIA GM/MS Nº 12.530, DE 17 DE NOVEMBRO DE 2026 Torna públicos os códigos…"
+  },
   {
    "id": "dou-743f19d847f3",
    "fonte": "DOU",
@@ -1251,6 +1317,19 @@
   }
  ],
  "runs": [
+  {
+   "id": "r20261118161504",
+   "started_at": "2026-11-18T16:15:04-03:00",
+   "status": "concluida",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 651,
+   "total_encontradas": 13,
+   "novas": 3,
+   "erro": null
+  },
   {
    "id": "r20261117163823",
    "started_at": "2026-11-17T16:38:23-03:00",
