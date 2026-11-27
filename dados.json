@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-26T16:59:40-03:00",
+ "gerado_em": "2026-11-27T16:48:44-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -1384,6 +1384,19 @@
  ],
  "runs": [
   {
+   "id": "r20261127164844",
+   "started_at": "2026-11-27T16:48:44-03:00",
+   "status": "erro",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 0,
+   "total_encontradas": 0,
+   "novas": 0,
+   "erro": "DOU DO1 de 27/11/2026: 404 Client Error: Not Found for url: https://www.in.gov.br/leiturajornal?data=27-11-2026&secao=do1 | DOU DO1 de 26/11/2026: 404 Client Error: Not Found for url: https://www.in.gov.br/leiturajornal?data=26-11-2026&secao=do1 | Notas MS 2026 (item 0): ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
    "id": "r20261126165940",
    "started_at": "2026-11-26T16:59:40-03:00",
    "status": "erro",
@@ -2140,19 +2153,6 @@
   {
    "id": "r20260929134830",
    "started_at": "2026-09-29T13:48:30-03:00",
-   "status": "concluida",
-   "fontes": [
-    "DOU",
-    "Notas MS"
-   ],
-   "varridas": 947,
-   "total_encontradas": 8,
-   "novas": 0,
-   "erro": null
-  },
-  {
-   "id": "r20260929101724",
-   "started_at": "2026-09-29T10:17:24-03:00",
    "status": "concluida",
    "fontes": [
     "DOU",
