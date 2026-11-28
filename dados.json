@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-27T16:48:44-03:00",
+ "gerado_em": "2026-11-28T15:41:35-03:00",
  "keywords": [
   "Capitão Leônidas Marques",
   "atenção primária",
@@ -1384,6 +1384,19 @@
  ],
  "runs": [
   {
+   "id": "r20261128154135",
+   "started_at": "2026-11-28T15:41:35-03:00",
+   "status": "erro",
+   "fontes": [
+    "DOU",
+    "Notas MS"
+   ],
+   "varridas": 0,
+   "total_encontradas": 0,
+   "novas": 0,
+   "erro": "DOU DO1 de 27/11/2026: 502 Server Error: Bad Gateway for url: https://www.in.gov.br/leiturajornal?data=27-11-2026&secao=do1 | Notas MS 2026 (item 0): ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
    "id": "r20261127164844",
    "started_at": "2026-11-27T16:48:44-03:00",
    "status": "erro",
@@ -2148,19 +2161,6 @@
    "varridas": 804,
    "total_encontradas": 7,
    "novas": 1,
-   "erro": null
-  },
-  {
-   "id": "r20260929134830",
-   "started_at": "2026-09-29T13:48:30-03:00",
-   "status": "concluida",
-   "fontes": [
-    "DOU",
-    "Notas MS"
-   ],
-   "varridas": 947,
-   "total_encontradas": 8,
-   "novas": 0,
    "erro": null
   }
  ]
